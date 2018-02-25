@@ -12,8 +12,8 @@ cd xmr-stak/build
 cmake -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF .. 
 make install 
 sudo sysctl -w vm.nr_hugepages=128 
-cd xmr-stak/build/bin
+cd
+nano xmr-stak/xmrstak/donate-level.hpp 
+cd xmr-stak/build/bin 
 screen
 ./xmr-stak
-
-
